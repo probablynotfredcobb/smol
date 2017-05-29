@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+
+      <%= @url.link %>
+      <br>
+      <h5> local host </h5>
+      <%= @url.short %>
+
+
+      <%= link_to 'Show', @url %>
+      <%= link_to 'Edit', edit_url_path(@url) %>
+      <%= link_to 'Destroy', @url, method: :delete, data: { confirm: 'Are you sure?' } %>
